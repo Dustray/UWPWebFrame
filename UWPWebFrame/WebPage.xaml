@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <WebView Name="MainWebView" Source="https://dustray.cn/" ContentLoading="MainWebView_ContentLoading" />
+        <WebView Name="MainWebView" Source="http://www.tangbure.org/" ContentLoading="MainWebView_ContentLoading" />
     </Grid>
 </Page>

@@ -5,6 +5,7 @@
     xmlns:local="using:UWPWebFrame"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Windows10FallCreatorsUpdate="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 5)"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -56,16 +57,17 @@
                 </Setter.Value>
             </Setter>
         </Style>
+      
     </Page.Resources>
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource SystemControlAcrylicElementBrush}">
         <!--汉堡菜单开关-->
         <Button Name="PaneOpenButton" 
                 FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Foreground="White" 
                 Background="{Binding BackgroundColor}" 
                 Width="48" Height="48" 
                 VerticalAlignment="Top" Canvas.ZIndex="100" />
-        <SplitView Name="RootSplitView" DisplayMode="CompactOverlay"  >
-            <SplitView.Pane>
+        <SplitView Name="RootSplitView" DisplayMode="CompactOverlay" >
+            <SplitView.Pane >
                 <Grid Background="#CC000000">
                     <Grid.RowDefinitions>
                         <!--空出Button的高度-->
@@ -92,6 +94,7 @@
                 <Frame Name="RootFrame">
                 </Frame>
             </SplitView.Content>
+           
         </SplitView>
 
     </Grid>
